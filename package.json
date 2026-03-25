@@ -1,0 +1,19 @@
+{
+  "name": "farmatodo-qa-automatizacion",
+  "version": "1.0.0",
+  "description": "Prueba tecnica QA Automation - Farmatodo",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:api": "npx playwright test --project=api",
+    "test:e2e": "npx playwright test --project=e2e",
+    "test:headed": "npx playwright test --headed",
+    "test:slow": "SLOW_MO=1000 npx playwright test --project=e2e --headed",
+    "test:debug": "npx playwright test --debug",
+    "report": "npx playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.52.0",
+    "@types/node": "^25.5.0",
+    "typescript": "^5.7.0"
+  }
+}
